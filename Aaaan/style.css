@@ -1,0 +1,25 @@
+#bgDiv {
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid black;
+  }
+
+  .white_bg {
+    background-color: aqua;
+  }
+
+  .green_bg {
+    background-color: rgb(76, 219, 83);
+  }
+
+  .blue_bg {
+    background-color: rgb(17, 0, 255);
+  }
+
+  .yellow_bg {
+    background-color: rgb(255, 238, 0);
+  }
+
+  .no_bg {
+    background-color: rgb(255, 0, 234);
+  }

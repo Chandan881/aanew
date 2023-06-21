@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" class="href">
+</head>
+<body>
+    <div id="bgDiv">
+        <h2>Select your color</h2>
+        <select id="myDropdown">
+            <option value="White">White</option>
+            <option value="Green">Green</option>
+            <option value="Blue">Blue</option>
+            <option value="Yellow">Yellow</option>
+        </select>
+        </div>
+
+        <script>
+
+            const dropdown = document.getElementById("myDropdown")
+            dropdown.addEventListener("change", function () {
+                const selectedValue = dropdown.value;
+                console.log(selectedValue)
+    
+                const getDiv = document.getElementById("bgDiv")
+                
+    
+                getDiv.classList.remove('white_bg', 'green_bg', 'blue_bg', 'yellow_bg', 'no_bg');
+    
+                if( selectedValue === "White"){
+                    getDiv.classList.add('white_bg')
+                }else if(selectedValue === "Green"){
+                    getDiv.classList.add('green_bg')
+                }else if(selectedValue === "Blue"){
+                    getDiv.classList.add('blue_bg')
+                }else if(selectedValue === "Yellow"){
+                    getDiv.classList.add('yellow_bg')
+                }
+            })     
+    
+        </script> 
+</body>
+</html>
