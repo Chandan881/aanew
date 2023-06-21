@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" class="href">
+</head>
+<body>
+    <ul class="has-children">
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+        <li>Element 4</li>
+        <li>Element 5</li>
+        <li>Element 6</li>
+        <li>Element 7</li>
+        <li>Element 8</li>
+        <li>Element 9</li>
+        <li>Element 10</li>
+      </ul>
+    
+      <script>
+        // Get the parent ul element
+        const parent = document.querySelector('.has-children');
+        
+        // Set blue background to the first child
+        parent.children[0].classList.add('blue-bg');
+        
+        // Set palevioletred background to the last child
+        parent.lastElementChild.classList.add('palevioletred-bg');
+        
+        // Set green background to the 9th child
+        parent.children[8].classList.add('green-bg');
+        
+        // Set lime background to even numbered children
+        for (let i = 1; i < parent.children.length; i += 2) {
+          parent.children[i].classList.add('lime-bg');
+        }
+      </script>
+</body>
+</html>
